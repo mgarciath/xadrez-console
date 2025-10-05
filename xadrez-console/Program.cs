@@ -35,13 +35,13 @@ namespace MyApp {
                         Console.ReadLine();
                     }
                 }
-
-                Tela.imprimirTabuleiro(partida.tab);
-                Console.ReadLine();
+                Console.Clear();
+                Tela.imprimirPartida(partida);
             }
             catch (TabuleiroException ex) {
                 Console.WriteLine(ex.Message);
             }
+            Console.ReadLine();
         }
     }
 }
