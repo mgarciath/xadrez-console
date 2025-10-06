@@ -111,7 +111,7 @@ namespace xadrez {
                 throw new TabuleiroException("Você não pode se colocar em xeque!");
             }
             Peca p = tab.peca(destino);
-            // #jogadaespecial promocao
+            // #jogadaespecial promoção
             if (p is Peao) {
                 if ((p.cor == Cor.Branca && destino.linha == 0) || (p.cor == Cor.Preta && destino.linha == 7)) {
                     p = tab.retirarPeca(destino);
